@@ -1,10 +1,11 @@
-import Vue from 'vue';
-import VueCompositionApi from '@vue/composition-api';
-import App from '/components/App.vue';
+import { createApp } from 'vue'
+import { hot } from '@hmr'
 
-Vue.use(VueCompositionApi);
+import App from './components/App.vue'
 
-new Vue({
-  el: '#app',
-  render: h => h(App),
-});
+createApp(App).mount('#app')
+
+// new Vue({
+//   el: '#app',
+//   render: h => h(App),
+// });

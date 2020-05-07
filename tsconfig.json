@@ -1,20 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "paths": {
-      "/*": ["src/*"]
-    },
-
     "target": "esnext",
     "module": "esnext",
-
+    "moduleResolution": "node",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext"]
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"]
+  "exclude": ["node_modules", "dist"]
 }

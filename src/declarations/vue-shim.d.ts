@@ -1,5 +1,5 @@
-// Ensures vue files can be read by TSC
 declare module '*.vue' {
-  import Vue from 'vue'
-  export default Vue
+  import { Component } from 'vue'
+  const _default: Component
+  export default _default
 }

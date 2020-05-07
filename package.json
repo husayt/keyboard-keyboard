@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html",
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,19 +20,15 @@
   },
   "homepage": "https://github.com/ycmjason/2019-10-04-vuejs-london-conference-2019#readme",
   "dependencies": {
-    "@vue/composition-api": "^0.4.0",
-    "lodash.zip": "^4.2.0",
+    "lodash-es": "^4.2.0",
     "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.4",
-    "vue": "^2.6.11"
+    "vue": "^3.0.0-beta.10"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
     "@types/lodash.zip": "^4.2.6",
-    "@vue/component-compiler-utils": "^3.1.1",
-    "typescript": "^3.8.2",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/compiler-sfc": "^3.0.0-beta.10",
+    "typescript": "^3.8.3",
+    "vite": "0.11.5"
   }
 }
