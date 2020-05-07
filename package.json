@@ -32,7 +32,7 @@
     "@types/lodash.zip": "^4.2.6",
     "@vue/component-compiler-utils": "^3.1.1",
     "typescript": "^3.8.2",
-    "vue-template-compiler": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-template-compiler": "^2.6.11"
   }
 }

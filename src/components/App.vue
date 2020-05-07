@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts">
-import { createComponent, ref, computed, Ref } from '@vue/composition-api';
+import { defineComponent, ref, computed, Ref } from '@vue/composition-api';
 import { A4, SEMITONE, OCTAVE } from '/audio/frequencies';
 import { useKeyDown } from '/compositions/useKeyDown';
 import PianoKeyboard from '/components/PianoKeyboard.vue';
@@ -61,7 +61,7 @@ const usePiano = (
   return computed(() => isPlayings.map(({ value }) => value));
 };
 
-export default createComponent({
+export default defineComponent({
   components: { PianoKeyboard, Footer },
   setup() {
     const keyboardsDivRef = ref<HTMLElement>(null);
